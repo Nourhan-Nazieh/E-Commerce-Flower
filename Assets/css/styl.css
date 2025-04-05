@@ -433,7 +433,7 @@ font-size: 3rem;
 
 
  .products .box-container{
-   display: flexbox;
+   display: flex;
    flex-wrap: wrap;
    gap: 1.5rem;
    box-shadow: 0 0 10px rgba(187, 129, 129, 0.342);
@@ -546,8 +546,6 @@ text-decoration: line-through;
 }
 
 
-
-
 /* ـــــــــــ */
 .products .box-container .box .image .icons .cart-btn{
   border-left: .1rem solid #fff7;
@@ -556,6 +554,14 @@ text-decoration: line-through;
 }
 
 
+
+ /* Responsive */
+
+ @media (max-width: 768px) {
+  .products .box-container {
+    flex-direction: column; 
+  }
+}
 
 
 
